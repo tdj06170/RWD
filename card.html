@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<title> Christmas card </title>
+ <meta charset="utf-8">
+ <style>
+ *{box-sizing:border-box;}
+ .col-1{width:8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} 
+[class*="col-"]{
+	float:left;
+	padding:45px;
+	border:15px solid red;
+}
+.row{ }
+ 		img{
+    		position: relative;
+    		animation-name: example;
+    		animation-duration: 1s;
+			}
+		div.container{width:500px;margin-right: auto;margin-left:auto;}
+
+		.head1{border: 10px solid black; text-align: center;margin-bottom: 0px;width: 100%;box-sizing: border-box; background-color:white;}
+		h1{
+			color:orange;
+		}
+		img{max-width:100%;float: left; height: auto;}
+		@keyframes example {
+    	0%   {left:-600px; top:0px;}
+    	50%  {left:600px; top:0px;}
+    	100% {left:0px; top:0px;}
+		}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+function Change()
+{
+	document.getElementById("img1").src="present.jpg";
+}
+</script>
+<div class ="container ">
+	<div class="row">
+	<div class="col-12 head1">
+	<div class="col-12"> 
+	<h1> Merry Christmas </h1> </div>
+	<div class="col-12">
+	<img src="santa.jpg" id="img1" onclick="Change()"/>
+	<h1> Click me </h1>
+	</div>
+	<div class="col-12">
+	<h1>행복한 크리스마스 보내세요</h1></div> 	
+</body>
+</html>
